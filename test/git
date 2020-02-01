@@ -1,0 +1,4 @@
+#!/bin/bash
+## File named git which contains our git mock
+## Read the fake branch name from a file, so that test code can change the output of git
+cat test/.test-branch
