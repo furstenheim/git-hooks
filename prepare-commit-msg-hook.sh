@@ -1,4 +1,11 @@
 #!/bin/bash
+
+## This scripts assumes that:
+##   * You use a ticketing system where tickets have an id of the shape [A-Z]+-[0-9]+. For example, GLEE-313
+##   * You name all your feature branches by $TICKET-description. For example, GLEE-313-my-first-feature
+##
+## Under those two assumptions (which are relatively common), this hook will prepend the code of the commit to all messages.
+
 BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
 if [ -z "$BRANCH_NAME" ]; then
     echo "Not a git repo"
