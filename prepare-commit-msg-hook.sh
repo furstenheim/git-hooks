@@ -12,12 +12,12 @@ fi
 
 COMMIT=$(cat $1)
 if [[ "$COMMIT" =~ ^\[[A-Z]+-[0-9]+\] ]]; then
-  ## There is already some code in the commit. For example from ammending or applying. Nothing to be done.
+  ## There is already some code in the commit. For example from amending or applying. Nothing to be done.
   exit 0
 fi
 
 if [[ "$COMMIT" =~ ^Merge[[:space:]]branch[[:space:]] ]]; then
-  ## Let's not modify automated messages
+  ## Let's not modify automated merge messages
  exit 0
 fi
 

@@ -17,7 +17,7 @@ function testCase () {
 testCase GLEE-313-my-first-branch "Such an awesome commit" "[GLEE-313] Such an awesome commit"
 testCase OPP-4313-my-first-branch "Such an awesome commit" "[OPP-4313] Such an awesome commit"
 testCase my-branch-has-no-code "Sad commit" "Sad commit"
-testCase GLEE-313-my-first-branch "[GLEE-313] Commit to be ammended, so it already has code" "[GLEE-313] Commit to be ammended, so it already has code"
+testCase GLEE-313-my-first-branch "[GLEE-313] Commit to be amended, so it already has code" "[GLEE-313] Commit to be amended, so it already has code"
 testCase GLEE-313-my-first-branch "Merge branch master into 'GLEE-313-my-first-branch'" "Merge branch master into 'GLEE-313-my-first-branch'"
 
 
